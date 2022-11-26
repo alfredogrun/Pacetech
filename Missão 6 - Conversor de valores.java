@@ -12,7 +12,7 @@ public class Main {
 
         do {
             System.out.println("CONVERSOR DE VALORES");
-            System.out.println("Qual convers�o o senhor/senhora deseja realizar?");
+            System.out.println("Qual conversão o senhor/senhora deseja realizar?");
             System.out.println("Digite 1 - Temperaturas (Celsius e/ou Fahrenheit).");
             System.out.println("Digite 2 - Moedas (Dolar e/ou Euro).");
             System.out.println("Digite 3 - Sair.");
@@ -33,8 +33,8 @@ public class Main {
                             System.out.println("Digite a temperatura em Celsius.");
                             tempCelsius = leia.nextFloat();
                             tempFahrenheit = tempCelsius * 1.8f + 32;
-                            System.out.println(tempCelsius + "°C s�o"
-                                    + " " + tempFahrenheit + "°F");
+                            System.out.println(tempCelsius + "Â°C são"
+                                    + " " + tempFahrenheit + "Â°F");
                             System.out.print("\n");
                             break;
 
@@ -42,8 +42,8 @@ public class Main {
                             System.out.println("Digite a temperatura em Fahrenheit.");
                             tempFahrenheit = leia.nextFloat();
                             tempCelsius = (tempFahrenheit - 32) / 1.8f;
-                            System.out.println(tempFahrenheit + "°F s�o"
-                                    + " " + tempCelsius + "°C");
+                            System.out.println(tempFahrenheit + "Â°F são"
+                                    + " " + tempCelsius + "Â°C");
                             System.out.print("\n");
                             break;
                             
@@ -59,29 +59,29 @@ public class Main {
 
                 case 2: {
                     System.out.println("Escolha a moeda desejada");
-                    System.out.println("Digite 1 - Real para D�lar");
-                    System.out.println("Digite 2 - D�lar para Real");
+                    System.out.println("Digite 1 - Real para Dólar");
+                    System.out.println("Digite 2 - Dólar para Real");
                     System.out.println("Digite 3 - Retornar");
                     opcaoMoeda = leia.nextInt();
                     System.out.print("\n");
                     switch (opcaoMoeda) {
                         case 1:
-                            System.out.println("Informe a cota��o atual do D�lar");
+                            System.out.println("Informe a cotação atual do Dólar");
                             cotacaoDolar = leia.nextFloat();
                             System.out.println("Informe o valor de R$ (reais)");
                             valorReal = leia.nextFloat();
                             valorDolar = valorReal / cotacaoDolar;
-                            System.out.println("R$" + valorReal + " s�o US$ " + valorDolar);
+                            System.out.println("R$" + valorReal + " são US$ " + valorDolar);
                             System.out.print("\n");
                             break;
 
                         case 2:
-                            System.out.println("Informe a cota��o atual do D�lar");
+                            System.out.println("Informe a cotação atual do Dólar");
                             cotacaoDolar = leia.nextFloat();
-                            System.out.println("Informe o valor de US$ (d�lares)");
+                            System.out.println("Informe o valor de US$ (dólares)");
                             valorDolar = leia.nextFloat();
                             valorReal = valorDolar * cotacaoDolar;
-                            System.out.println("US$" + valorDolar + " s�o R$ " + valorReal);
+                            System.out.println("US$" + valorDolar + " são R$ " + valorReal);
                             System.out.print("\n");
                             break;
                             
